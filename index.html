@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Menu</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tools</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                  Navbar text with an inline element
+                </span>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <h1></h1>
+        <div id="contenedor-general">
+            <div id="contenedor-input">
+                <div>
+                    <p class="h6">Type here to search</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search here" id="filter-text" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div>
+                    <p class="h6">Breed</p>
+                    <select class="form-select" id="inputGroupSelect01" id="breed-input">
+                        <option selected>Choose...</option>
+                        <option>Aquatic</option>
+                        <option>Beast</option>
+                        <option>Reptile</option>
+                        <option>Plant</option>
+                    </select>
+                </div>
+                <div>
+                    <p class="h6">Part</p>
+                    <select class="form-select" id="inputGroupSelect01" id="part-input">
+                        <option selected>Choose...</option>
+
+                        <option>Tail</option>
+                        
+                        <option>Mouth</option>
+                        
+                        <option>Horn</option>
+                        
+                    </select>
+                </div>
+                <div>
+                    <p class="h6">Distance</p>
+                    <select class="form-select" id="inputGroupSelect01" id="distance-input">
+    
+                        <option selected>Choose...</option>
+
+                        <option>Ranged</option>
+                        
+                        <option>Melee</option>
+                        
+                    </select>
+                </div>
+
+            </div>
+            <div id="contenedor-cards" class="bg-dark">
+            </div>
+
+        </div>
+    </main>
+    <script type="module" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: none;
+}
+
+#contenedor-input{
+    display: flex;
+    margin: auto;
+    width: 50%;
+    justify-content:space-around;
+    
+}
+#contenedor-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(245, 245, 245);
+    gap: 1%;
+    width: 100%;
+    height: 100vh;
+    
+}
+.card{
+    max-width: 260px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+.card-image{
+    max-width: 260px;
+}
