@@ -13,8 +13,8 @@ const breedInput = document.getElementById('breed-input')
 const partInput = document.getElementById('part-input')
 const distanceInput = document.getElementById('distance-input')
 
-var cardsAux
-var auxiliarCardsCoincidence
+var cardsAux = cards;
+var auxiliarCardsCoincidence;
 var activeFilter = {
     breed: null,
     part: null,
@@ -40,7 +40,7 @@ function printCards(carta, index){
 
   const searchCards = () => {
       if(filterText.value != '' || filterText.value){
-        var all_cards_coincidences = cards.filter( carta => new RegExp(filterText.value, 'i').test(carta.name.toLowerCase().concat(carta.hability.toLocaleLowerCase())))
+        var all_cards_coincidences = cardsAux.filter( carta => new RegExp(filterText.value, 'i').test(carta.name.toLowerCase().concat(carta.hability.toLocaleLowerCase())))
         auxiliarCardsCoincidence = all_cards_coincidences
         if(all_cards_coincidences){
             let i = 0;
@@ -61,7 +61,7 @@ function printCards(carta, index){
 
 function filterCards (filtros){
     console.log(typeof filtros.distance);
-    cardsAux = cards
+    
     if(filtros.breed != 0){
         cardsAux = cardsAux.filter( carta => new RegExp(filtros.breed, 'i').test(carta.breed.toLowerCase()))
     }
