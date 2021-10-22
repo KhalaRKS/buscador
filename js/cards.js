@@ -534,7 +534,538 @@ const cards = [
         distance: false,
         part: 'tail',
         url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-12.png'
-    }
+    },
+    /*--------------------------CARTAS PAJARO-------------------------------- */
+    {
+        name: 'BALLOON',
+        hability: 'Balloon Pop',
+        breed: 'bird',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-02.png'
+    }, 
+    {
+        name: 'CUPID',
+        breed: 'bird',
+        hability: 'Heart Break',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-04.png'
+    }, 
+    {
+        name: 'RAVEN',
+        hability: 'Ill-omened',
+        breed: 'bird',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-06.png'
+    }, 
+    {
+        name: 'PIGEON POST',
+        hability: 'Blackmail',
+        breed: 'bird',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-08.png'
+    }, 
+    {
+        name: 'KINGFISHER',
+        hability: 'Patient Hunter',
+        breed: 'bird',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-10.png'
+    }, 
+    {
+        name: 'TRI FEATHER',
+        hability: 'Triple Threat',
+        breed: 'bird',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-back-12.png'
+    }, 
+    {
+        name: 'EGGSHELL',
+        hability: 'Eggbomb',
+        breed: 'bird',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-02.png'
+    }, 
+    {
+        name: 'CUCKOO',
+        hability: 'Cockadoodledoo',
+        breed: 'bird',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-04.png'
+    }, 
+    {
+        name: 'TRUMP',
+        hability: 'Air Force One',
+        breed: 'bird',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-06.png'
+    }, 
+    {
+        name: 'KESTREL',
+        hability: 'Headshot',
+        breed: 'bird',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-08.png'
+    }, 
+    {
+        name: 'WING HORN',
+        hability: 'Smart Shot',
+        breed: 'bird',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-10.png'
+    }, 
+    {
+        name: 'FEATHER SPEAR',
+        hability: 'Feather Lunge',
+        breed: 'bird',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-horn-12.png'
+    }, 
+    {
+        name: 'DOUBLETALK',
+        hability: 'Soothing Song',
+        breed: 'bird',
+        distance: true,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-02.png'
+    }, 
+    {
+        name: 'PEACE MAKER',
+        hability: 'Peace Treaty',
+        breed: 'bird',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-04.png'
+    }, 
+    {
+        name: 'HUNGRY BIRD',
+        hability: 'Insectivore',
+        breed: 'bird',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-08.png'
+    }, 
+    {
+        name: 'LITTLE OWL',
+        hability: 'Dark Swoop',
+        breed: 'bird',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-mouth-10.png'
+    }, 
+    {
+        name: 'SWALLOW',
+        hability: 'Early Bird',
+        breed: 'bird',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-02.png'
+    }, 
+    {
+        name: 'FEATHER FAN',
+        hability: 'Sunder Armor',
+        breed: 'bird',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-04.png'
+    }, 
+    {
+        name: 'THE LAST ONE',
+        hability: 'Risky Feather',
+        breed: 'bird',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-06.png'
+    }, 
+    {
+        name: 'CLOUD',
+        hability: 'Puffy Smack',
+        breed: 'bird',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-08.png'
+    }, 
+    {
+        name: 'GRANMA\'S FAN',
+        hability: 'Cool Breeze',
+        breed: 'bird',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-10.png'
+    }, 
+    {
+        name: 'POST FIGHT',
+        hability: 'All-out Shot',
+        breed: 'bird',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bird-tail-12.png'
+    },
+    /*--------------------CARTAS BUG---------------------- */
+    {
+        name: 'SNAIL SHELL',
+        hability: 'Sticky Goo',
+        breed: 'bug',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-02.png'
+    }, 
+    {
+        name: 'GARISH WORM',
+        hability: 'Barb Strike',
+        breed: 'bug',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-04.png'
+    }, 
+    {
+        name: 'BUZZ BUZZ',
+        hability: 'Bug Noise',
+        breed: 'bug',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-06.png'
+    }, 
+    {
+        name: 'SANDAL',
+        hability: 'Bug Splat',
+        breed: 'bug',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-08.png'
+    }, 
+    {
+        name: 'SCARAB',
+        hability: 'Scarab Curse',
+        breed: 'bug',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-10.png'
+    }, 
+    {
+        name: 'SPIKY WING',
+        hability: 'Buzzing Wind',
+        breed: 'bug',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-back-12.png'
+    }, 
+    {
+        name: 'LAGGIN',
+        hability: 'Mystic Rush',
+        breed: 'bug',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-02.png'
+    }, 
+    {
+        name: 'ANTENNA',
+        hability: 'Bug Signal',
+        breed: 'bug',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-04.png'
+    }, 
+    {
+        name: 'CATERPILLARS',
+        hability: 'Grub Surprise',
+        breed: 'bug',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-06.png'
+    }, 
+    {
+        name: 'PLIERS',
+        hability: 'Dull Grip',
+        breed: 'bug',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-08.png'
+    }, 
+    {
+        name: 'PARASITE',
+        hability: 'Third Glance',
+        breed: 'bug',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-10.png'
+    }, 
+    {
+        name: 'LEAF BUG',
+        hability: 'Disguise',
+        breed: 'bug',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-horn-12.png'
+    }, 
+    {
+        name: 'MOSQUITO',
+        hability: 'Blood Taste',
+        breed: 'bug',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-02.png'
+    }, 
+    {
+        name: 'PINCER',
+        hability: 'Sunder Claw',
+        breed: 'bug',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-04.png'
+    }, 
+    {
+        name: 'CUTE BUNNY',
+        hability: 'Terror Chomp',
+        breed: 'bug',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-08.png'
+    }, 
+    {
+        name: 'SQUARE TEETH',
+        hability: 'Mite Bite',
+        breed: 'bug',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-mouth-10.png'
+    }, 
+    {
+        name: 'ANT',
+        hability: 'Chemical Warfare',
+        breed: 'bug',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-02.png'
+    }, 
+    {
+        name: 'TWIN TAIL',
+        hability: 'Twin Needle',
+        breed: 'bug',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-04.png'
+    }, 
+    {
+        name: 'FISH SNACK',
+        hability: 'Anesthetic Bait',
+        breed: 'bug',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-06.png'
+    }, 
+    {
+        name: 'GRAVEL ANT',
+        hability: 'Numbing Lecretion',
+        breed: 'bug',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-08.png'
+    }, 
+    {
+        name: 'PUPAE',
+        hability: 'Grub Explode',
+        breed: 'bug',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-10.png'
+    }, 
+    {
+        name: 'THORNY CATTEPILAR',
+        hability: 'Allergic Reaction',
+        breed: 'bug',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/bug-tail-12.png'
+    },
+    /*--------------------------------------------- CARTAS REPTIL -------------------------------*/
+    {
+        name: 'BONE SAIL, RUGGED SAIL',
+        hability: 'Ivory Chop',
+        breed: 'reptile',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-02.png'
+    }, 
+    {
+        name: 'TRI SPIKES',
+        hability: 'Spike Throw',
+        breed: 'reptile',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-04.png'
+    }, 
+    {
+        name: 'GREEN THORNS',
+        hability: 'Vine Dagger',
+        breed: 'reptile',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-06.png'
+    }, 
+    {
+        name: 'INDIAN STAR',
+        hability: 'Bulkwark',
+        breed: 'reptile',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-08.png'
+    }, 
+    {
+        name: 'RED EAR',
+        hability: 'Slippery Shield',
+        breed: 'reptile',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-10.png'
+    }, 
+    {
+        name: 'CROC',
+        hability: 'Nile Strike',
+        breed: 'reptile',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-back-12.png'
+    }, 
+    {
+        name: 'UNKO, PINKU UNKO',
+        hability: 'Poo Fling',
+        breed: 'reptile',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-02.png'
+    }, 
+    {
+        name: 'SCALY SPEAR',
+        hability: 'Scaly Lunge',
+        breed: 'reptile',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-04.png'
+    }, 
+    {
+        name: 'CERASTES',
+        hability: 'Surprise Invasion',
+        breed: 'reptile',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-06.png'
+    }, 
+    {
+        name: 'SCALY SPOON',
+        hability: 'Tiny Catapult',
+        breed: 'reptile',
+        distance: true,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-08.png'
+    }, 
+    {
+        name: 'INCISOR',
+        hability: 'Disarm',
+        breed: 'reptile',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-10.png'
+    }, 
+    {
+        name: 'BUMPY',
+        hability: 'Overgrow Keratin',
+        breed: 'reptile',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-horn-12.png'
+    }, 
+    {
+        name: 'TOOTHLESS BITE, VENOM BITE',
+        hability: 'Sneaky Raid',
+        breed: 'reptile',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-02.png'
+    }, 
+    {
+        name: 'KOTARO',
+        hability: 'Kotaro bite',
+        breed: 'reptile',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-04.png'
+    }, 
+    {
+        name: 'RAZOR BITE',
+        hability: 'Why So Serious',
+        breed: 'reptile',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-08.png'
+    }, 
+    {
+        name: 'TINY TURTLE',
+        hability: 'Chomp',
+        breed: 'reptile',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-mouth-10.png'
+    }, 
+    {
+        name: 'WALL GECKO, ESCAPED GECKO',
+        hability: 'Critical Escape',
+        breed: 'reptile',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-02.png'
+    }, 
+    {
+        name: 'IGUANA',
+        hability: 'Scale Dart',
+        breed: 'reptile',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-04.png'
+    }, 
+    {
+        name: 'TINY DINO',
+        hability: 'Tiny Swing',
+        breed: 'reptile',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-06.png'
+    }, 
+    {
+        name: 'SNAKE JAR',
+        hability: 'Jar Barrage',
+        breed: 'reptile',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-08.png'
+    }, 
+    {
+        name: 'GILA',
+        hability: 'Neuro Toxin',
+        breed: 'reptile',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-10.png'
+    }, 
+    {
+        name: 'GRASS SNAKE',
+        hability: 'Venom Spray',
+        breed: 'reptile',
+        distance: true,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/reptile-tail-12.png'
+    },
 ]
 
 
