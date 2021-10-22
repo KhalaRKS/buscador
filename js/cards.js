@@ -357,6 +357,183 @@ const cards = [
         distance: false,
         part: 'tail',
         url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/beast-tail-12.png'
+    },
+    /*--------------------INICIO PLANTAS -------------------------- */
+    {
+        name: 'TURNIP',
+        hability: 'Turnip Rocket',
+        breed: 'plant',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-02.png'
+    }, 
+    {
+        name: 'SHIITAKE',
+        breed: 'plant',
+        hability: 'Shroom\'s Grace',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-04.png'
+    }, 
+    {
+        name: 'BIDENS',
+        hability: 'Cleanse Scent',
+        breed: 'plant',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-06.png'
+    }, 
+    {
+        name: 'WATERING CAN',
+        hability: 'Aqua Stock',
+        breed: 'plant',
+        distance: true,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-08.png'
+    }, 
+    {
+        name: 'MINT',
+        hability: 'Refresh',
+        breed: 'plant',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-10.png'
+    }, 
+    {
+        name: 'PUMPKIN',
+        hability: 'October Treat',
+        breed: 'plant',
+        distance: false,
+        part: 'back',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-back-12.png'
+    }, 
+    {
+        name: 'BAMBOO SHOOT',
+        hability: 'Bamboo Clan',
+        breed: 'plant',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-02.png'
+    }, 
+    {
+        name: 'BEECH',
+        hability: 'Wooden Stab',
+        breed: 'plant',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-04.png'
+    }, 
+    {
+        name: 'ROSE BUD',
+        hability: 'Healing Aroma',
+        breed: 'plant',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-06.png'
+    }, 
+    {
+        name: 'STRAWBERRY SHORTCAKE',
+        hability: 'Sweet Party',
+        breed: 'plant',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-08.png'
+    }, 
+    {
+        name: 'CACTUS',
+        hability: 'Prickly Trap',
+        breed: 'plant',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-10.png'
+    }, 
+    {
+        name: 'WATERMELON',
+        hability: 'Seed Bullet',
+        breed: 'plant',
+        distance: false,
+        part: 'horn',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-horn-12.png'
+    }, 
+    {
+        name: 'SERIOUS',
+        hability: 'Vegetal Bite',
+        breed: 'plant',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-02.png'
+    }, 
+    {
+        name: 'ZIGZAG',
+        hability: 'Drain Bite',
+        breed: 'plant',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-04.png'
+    }, 
+    {
+        name: 'HERBIVORE',
+        hability: 'Vegan Diet',
+        breed: 'plant',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-08.png'
+    }, 
+    {
+        name: 'SILENCE WHISPER',
+        hability: 'Forest Spirit',
+        breed: 'plant',
+        distance: false,
+        part: 'mouth',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-mouth-10.png'
+    }, 
+    {
+        name: 'CARROT',
+        hability: 'Carrot Hammer',
+        breed: 'plant',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-02.png'
+    }, 
+    {
+        name: 'CATTAIL',
+        hability: 'Cattail Slap',
+        breed: 'plant',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-04.png'
+    }, 
+    {
+        name: 'HATSUNE',
+        hability: 'Leek Leak',
+        breed: 'plant',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-06.png'
+    }, 
+    {
+        name: 'YAM',
+        hability: 'Gas Unleash',
+        breed: 'plant',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-08.png'
+    }, 
+    {
+        name: 'POTATO LEAF',
+        hability: 'Aqua Deflect',
+        breed: 'plant',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-10.png'
+    }, 
+    {
+        name: 'HOT BUTT',
+        hability: 'Spicy Surprise',
+        breed: 'plant',
+        distance: false,
+        part: 'tail',
+        url: 'https://storage.googleapis.com/axie-cdn/game/cards/base/plant-tail-12.png'
     }
 ]
 

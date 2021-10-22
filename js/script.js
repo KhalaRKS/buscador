@@ -2,7 +2,6 @@
 
 import cards from './cards.js'
 
-
 /* Definicion de constantes con nodos de la vista
 - Contenedor de las cartas
 - Selección de cada input para el buscador de las cartas */
@@ -13,8 +12,15 @@ filterText.innerText = ''
 const breedInput = document.getElementById('breed-input')
 const partInput = document.getElementById('part-input')
 const distanceInput = document.getElementById('distance-input')
-var auxiliarCardsCoincidence
 
+var cardsAux
+var auxiliarCardsCoincidence
+var activeFilter = {
+    breed: null,
+    part: null,
+    distance: null
+}
+var filterAux = activeFilter;
 function cleanCards (){
     while(contenedorCards.firstChild){
         contenedorCards.removeChild(contenedorCards.firstChild)
@@ -33,7 +39,6 @@ function printCards(carta, index){
     }
 
   const searchCards = () => {
-      console.log('entre');
       if(filterText.value != '' || filterText.value){
         var all_cards_coincidences = cards.filter( carta => new RegExp(filterText.value, 'i').test(carta.name.toLowerCase().concat(carta.hability.toLocaleLowerCase())))
         auxiliarCardsCoincidence = all_cards_coincidences
@@ -52,53 +57,57 @@ function printCards(carta, index){
         cleanCards()
     }
 
-  }
-  function filterCards (breed,part,distance){
+}
 
-      if((breed && part && distance) == undefined){
-          return
-      }
-      if(auxiliarCardsCoincidence){
-        for (let index = 0; index < all_cards_coincidences.length; index++) {
-            if (auxiliarCardsCoincidence[index].breed == arguments[0]
-            ||  auxiliarCardsCoincidence[index].part == arguments[1]
-            ||  auxiliarCardsCoincidence[index].distance == arguments[2] ) {
-                const element = auxiliarCardsCoincidence[index];
-                printCards(element,index)
-            }
-
-        }
-      }else{
-        var printedCards = []
-        for (let index = 0; index < cards.length; index++) {
-            if (cards[index].breed == arguments[0]
-            ||  cards[index].part == arguments[1]
-            ||  cards[index].distance == arguments[2] ) {
-                const element = cards[index];
-                printCards(element,index)
-               printedCards.push(element)
-            }
-        }
-        return printedCards
-      }
-  }
-
-/*function filter (breed,part,distance){
-    for (let index = 0; index < arguments.length; index++) {
-        const element = arguments[index];
-        if (arguments[index]) {
-            
-        }
-        
+function filterCards (filtros){
+    console.log(typeof filtros.distance);
+    cardsAux = cards
+    if(filtros.breed != 0){
+        cardsAux = cardsAux.filter( carta => new RegExp(filtros.breed, 'i').test(carta.breed.toLowerCase()))
     }
-    switch () {
-        case value:
-            break;
-        default:
-            break;
+    
+    if(filtros.part != 0){
+        cardsAux = cardsAux.filter( carta => new RegExp(filtros.part, 'i').test(carta.part.toLowerCase()))
     }
-}*/
-//filterCards('beast','horn','hola')
+
+    if (filtros.distance != 0) {
+        cardsAux = cardsAux.filter( carta => new RegExp(filtros.distance, 'i').test(carta.distance))
+    }
+    return
+}
+
+
+
+function filter (breed,part,distance){
+    console.log(arguments[0],arguments[1],arguments[2]);
+
+    activeFilter.breed = arguments[0]
+    activeFilter.part = arguments[1]
+    activeFilter.distance = arguments[2]
+
+    cleanCards()
+    filterCards(activeFilter)
+    for (let index = 0; index < cardsAux.length; index++) {
+        const element = cardsAux[index];
+        printCards(element,index)
+    }
+}
 filterText.addEventListener('input', searchCards)
-//breedInput.addEventListener('change', filter)
-//partInput.addEventListener('change', filter)
+breedInput.addEventListener('change',function(){
+    let breedValue = breedInput.value
+    let partValue = partInput.value
+    let distanceValue = distanceInput.value
+    filter(breedValue,partValue,distanceValue)
+})
+partInput.addEventListener('change', function(){
+    let breedValue = breedInput.value
+    let partValue = partInput.value
+    let distanceValue = distanceInput.value
+    filter(breedValue,partValue,distanceValue)
+})
+distanceInput.addEventListener('change', function(){
+    let breedValue = breedInput.value
+    let partValue = partInput.value
+    let distanceValue = distanceInput.value
+    filter(breedValue,partValue,distanceValue)
+})

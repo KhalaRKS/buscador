@@ -37,7 +37,38 @@
           </nav>
     </header>
     <main>
-        <h1></h1>
+        <h1>Welcome to Axie Page</h1>
+        <div class="m-auto w-50 d-flex p-1 justify-content-around">
+          <p class="h4">Show tool</p>
+          <input type="checkbox" name="" id="">
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTool" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTool">
+              <div class="container-tool">
+                <div class="wrapper">
+                  <button value="1" class="button-tool one">1</button>
+                  <button value="3" class="button-tool two">3</button>
+                  <button value="6" class="button-tool three">6</button>
+                  <button value="9" class="button-tool four">9</button>
+                  <button value="12" class="button-tool five">12</button>
+                  <button value="15" class="button-tool six">15</button>
+                  <button value="18" class="button-tool seven">18</button>
+                  <button value="21" class="button-tool eight">21</button>
+                  <button value="" class="button-tool nine">Delete</button>
+                  <div class="ten">
+                    <p class="display-tool" id="display-tool">
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
         <div id="contenedor-general">
             <div id="contenedor-input">
                 <div>
@@ -48,37 +79,30 @@
                 </div>
                 <div>
                     <p class="h6">Breed</p>
-                    <select class="form-select" id="inputGroupSelect01" id="breed-input">
-                        <option selected>Choose...</option>
-                        <option>Aquatic</option>
-                        <option>Beast</option>
-                        <option>Reptile</option>
-                        <option>Plant</option>
+                    <select class="form-select" id="breed-input">
+                        <option value=0 selected>Choose...</option>
+                        <option value="aquatic">Aquatic</option>
+                        <option value="beast">Beast</option>
+                        <option value="reptile">Reptile</option>
+                        <option value="plant">Plant</option>
                     </select>
                 </div>
                 <div>
                     <p class="h6">Part</p>
-                    <select class="form-select" id="inputGroupSelect01" id="part-input">
-                        <option selected>Choose...</option>
-
-                        <option>Tail</option>
-                        
-                        <option>Mouth</option>
-                        
-                        <option>Horn</option>
-                        
+                    <select class="form-select"  id="part-input">
+                        <option value="0" selected>Choose...</option>
+                        <option value="tail">Tail</option>
+                        <option value="mouth">Mouth</option>
+                        <option value="horn">Horn</option>
+                        <option value="back">Back</option>
                     </select>
                 </div>
                 <div>
                     <p class="h6">Distance</p>
-                    <select class="form-select" id="inputGroupSelect01" id="distance-input">
-    
-                        <option selected>Choose...</option>
-
-                        <option>Ranged</option>
-                        
-                        <option>Melee</option>
-                        
+                    <select class="form-select"  id="distance-input">
+                        <option value="0" selected>Choose...</option>
+                        <option value="true" >Ranged</option>
+                        <option value="false" >Melee</option>
                     </select>
                 </div>
 
