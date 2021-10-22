@@ -60,8 +60,8 @@ function printCards(carta, index){
 }
 
 function filterCards (filtros){
-    console.log(typeof filtros.distance);
-    
+    console.log(filtros.distance);
+    cardsAux = cards;
     if(filtros.breed != 0){
         cardsAux = cardsAux.filter( carta => new RegExp(filtros.breed, 'i').test(carta.breed.toLowerCase()))
     }
