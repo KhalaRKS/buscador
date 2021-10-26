@@ -1,7 +1,7 @@
 'use strict'
 
 import cards from './cards.js'
-
+var prueba = document.querySelector("#__next > div.mt-20.pb-20.sm\\:pb-32 > div > div:nth-child(2) > div:nth-child(5) > div.rounded-12.border.border-gray-3.pt-20.md\\:pt-28.pb-4.pl-16.md\\:pl-32.pr-4.bg-gray-4.overflow-hidden.flex.flex-wrap > div:nth-child(1) > div.mb-8.flex.items-center.justify-center > svg")
 /* Definicion de constantes con nodos de la vista
 - Contenedor de las cartas
 - Selección de cada input para el buscador de las cartas */
@@ -28,17 +28,27 @@ function cleanCards (){
 }
 function printCards(carta, index){
 
-    var {name, hability, url} = carta;
-    var etiqueta = "<div class='card' id='"+index+"'><div> <p>"+name+"</p><p>"+hability+"</p>"
-    var etiquetaAuxiliar = "</div><div><img class='card-image' src='"+url+"' alt=''></div></div>"
+    var {name, hability, url, distance, path, description} = carta;
+    distance = distance ? 'Ranged' : 'Melee'
+    if(name == 'STRAWBERRY SHORTCAKE')
+    distance = '2'
+    var etiqueta = "<div class='card' id='"+index+"'><div class='title-card'> <p>"+path+" "+ name+"</p><p>"+distance+"</p>"
+    var etiquetaAuxiliar = "</div><div><p class='energy'>1</p><p class='hability'>"+hability+"</p><p class='description'>"+description+"</p><img class='card-image' src='"+url+"' alt=''></div></div>"
     var abc = etiqueta + etiquetaAuxiliar;
     var contenedorTexto= document.createElement("li");
     contenedorCards.appendChild(contenedorTexto);
     contenedorTexto.innerHTML = abc;
 
+}
+/*Cargar cartas cuando la página se inicia */
+function loadCards(){
+    for (let index = 0; index < cards.length; index++) {
+        const element = cards[index];
+        printCards(element,index);
     }
-
-  const searchCards = () => {
+}
+/*Busca las cartars coincidentes en el buscador por texto */
+const searchCards = () => {
       if(filterText.value != '' || filterText.value){
         var all_cards_coincidences = cardsAux.filter( carta => new RegExp(filterText.value, 'i').test(carta.name.toLowerCase().concat(carta.hability.toLocaleLowerCase())))
         auxiliarCardsCoincidence = all_cards_coincidences
@@ -55,10 +65,11 @@ function printCards(carta, index){
         }
     }else{
         cleanCards()
+        loadCards()
     }
 
 }
-
+/*Filtra las cartas correspondientes al tipo de filtro coincidente */
 function filterCards (filtros){
     console.log(filtros.distance);
     cardsAux = cards;
@@ -77,8 +88,8 @@ function filterCards (filtros){
 }
 
 
-
-function filter (breed,part,distance){
+/*Recibe los filtros de las cartas que se desean buscar y las guarda en un objeto para ser cargadas por la funcion filterCards */
+function filters (breed,part,distance){
     console.log(arguments[0],arguments[1],arguments[2]);
 
     activeFilter.breed = arguments[0]
@@ -92,22 +103,29 @@ function filter (breed,part,distance){
         printCards(element,index)
     }
 }
+/*Código de ejecución */
+
 filterText.addEventListener('input', searchCards)
+
 breedInput.addEventListener('change',function(){
     let breedValue = breedInput.value
     let partValue = partInput.value
     let distanceValue = distanceInput.value
-    filter(breedValue,partValue,distanceValue)
+    filters(breedValue,partValue,distanceValue)
 })
+
 partInput.addEventListener('change', function(){
     let breedValue = breedInput.value
     let partValue = partInput.value
     let distanceValue = distanceInput.value
-    filter(breedValue,partValue,distanceValue)
+    filters(breedValue,partValue,distanceValue)
 })
+
 distanceInput.addEventListener('change', function(){
     let breedValue = breedInput.value
     let partValue = partInput.value
     let distanceValue = distanceInput.value
-    filter(breedValue,partValue,distanceValue)
+    filters(breedValue,partValue,distanceValue)
 })
+
+window.onload = loadCards();
