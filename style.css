@@ -207,12 +207,15 @@ main{
   }
   .eleven button{
     margin: auto;
-    width: 50%;
+    width: 30%;
     height: 30px;
     outline: none;
     box-shadow: none;
     border-radius: 5px;
   } 
+  .eleven-buttons{
+    display: flex;
+  }
   .slp-image{
     width: 25px;
   }

@@ -107,21 +107,21 @@ function filters (breed,part,distance){
 
 filterText.addEventListener('input', searchCards)
 
-breedInput.addEventListener('change',function(){
+breedInput.addEventListener('change',() =>{
     let breedValue = breedInput.value
     let partValue = partInput.value
     let distanceValue = distanceInput.value
     filters(breedValue,partValue,distanceValue)
 })
 
-partInput.addEventListener('change', function(){
+partInput.addEventListener('change', () =>{
     let breedValue = breedInput.value
     let partValue = partInput.value
     let distanceValue = distanceInput.value
     filters(breedValue,partValue,distanceValue)
 })
 
-distanceInput.addEventListener('change', function(){
+distanceInput.addEventListener('change', () =>{
     let breedValue = breedInput.value
     let partValue = partInput.value
     let distanceValue = distanceInput.value
