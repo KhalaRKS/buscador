@@ -362,6 +362,7 @@ h1{
         outline: none;
         border: 2px solid black;
         width: 100px;
+        font-size: 1em;
       }
       .energy-two button:hover{
         outline: none;
