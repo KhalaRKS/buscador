@@ -10,7 +10,11 @@
   -webkit-transition: transform 1s;
   transition: transform 1s;
 }
-
+button:focus, button:active, button:hover, button:visited{
+    box-shadow: none!important;
+    outline: 0;
+    border: 1px solid #212121;
+}
 .flip {
   transform: rotate(-180deg);
   
@@ -21,8 +25,8 @@
 }
 .description{
   position: absolute;
-  width: 160px;
-  left: 45px;
+  width: 190px;
+  left: 25px;
   bottom:10px;
   text-align: center;
   color: white;
@@ -46,12 +50,26 @@
   padding-top: 20px;
 }
 .donation-container{
-  display: none;
-  background-color: #FF8243;
+  font-size: 1em;
   text-align: center;
+}
+.donation-container h2{
+  font-size:1.1em;
+}
+.donation-container p{
+  font-size: 0.8em;
+}
+#displayEnergyTool{
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
 }
 main{
   background-color: #E0C097;
+}
+
+h1{
+  height: 40px;
 }
 #contenedor-input{
     display: flex;
@@ -231,13 +249,18 @@ main{
     color: black;
   }
   .navbar-tool{
-    height: 50px;
+    height: 110px;
+    margin-top: 0;
   }
   .contenedor-texto-navbar{
-    height: 50px;
+    height: 100px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     align-content: center;
+  }
+  .contenedor-texto-navbar p{
+    font-size: 1.1em;
   }
   #navbarTool{
     background-color: #FDA65D;
@@ -319,8 +342,44 @@ main{
         grid-column:4/6;
         grid-row: 2/4;
       }
+      .energy-one{
+        grid-column: 2/5;
+        grid-row: 4;
+        text-align: center;
+      }
+      .energy-two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-column: 1/6;
+        grid-row: 5;
+      }
+      .container-button-tool{
+        padding-top: 2px;
+      }
+      .energy-two button{
+        outline: none;
+        border: 2px solid black;
+        width: 100px;
+      }
+      .energy-two button:hover{
+        outline: none;
+      }
+      .energy-three{
+        grid-column: 1/6;
+        grid-row: 6;
+      }
+      .energy-four{
+        grid-column: 1/6;
+        grid-row: 7;
+      }
+      .energy-five{
+        grid-column:1/6;
+        grid-row: 8;
+      }
+
     .container-tool{
-      margin: auto;
       width: 100%;
     }
     #contenedor-input div{
@@ -333,6 +392,7 @@ main{
       flex-wrap: wrap;
       align-items: center;
     }
+
   }
   @media screen and (min-width:420px) {
     #contenedor-input div{
@@ -351,6 +411,13 @@ main{
     #contenedor-input{
       flex-direction: row;
       justify-content: space-around;
+    }
+    .contenedor-texto-navbar{
+      flex-direction: row;
+      justify-content: center;
+    }
+    .navbar-tool{
+      height: 100px;
     }
   }
   @media screen and (min-width:800px) {
