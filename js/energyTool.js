@@ -9,11 +9,9 @@ const allButtonsEnergy = document.getElementsByClassName('btn-energy')
 
 var energyCounter = 3;
 displayEnergy.innerText= `${energyCounter} / 10`;
-console.log(allButtonsEnergy);
 
 for (let index = 0; index < allButtonsEnergy.length; index++) {
     const element = allButtonsEnergy[index];
-    console.log(element);
     element.addEventListener ('click', ()=>{
         // si llega value = 0 de el boton, el contador se resetea (Indica reset)
         if(element.value == 0){
@@ -32,7 +30,11 @@ for (let index = 0; index < allButtonsEnergy.length; index++) {
         if(energyCounter>=10){
             energyCounter = 10
             displayEnergy.innerText = `${energyCounter} / 10`
-        }else{
+        }else if (energyCounter<=0){
+            energyCounter = 0
+            displayEnergy.innerText = `${energyCounter} / 10`
+        }
+        else{
             displayEnergy.innerText = `${energyCounter} / 10`
         }
         

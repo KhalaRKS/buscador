@@ -7,20 +7,17 @@ const svgArrow = document.getElementById('rotation')
 const buttonTool = document.getElementById('boton-tool')
 const buttonStepBack = document.getElementById('btn-back')
 var valorAuxiliarSLP = 0;
-console.log(displayTool);
 var valorActualSlp = 0
 for (let index = 0; index < buttons.length; index++) {
     const element = buttons[index];
     displayTool.innerText = 0
     element.addEventListener('click', function () {
         if (element.value == -1) {
-            console.log("entro");
             valorActualSlp = 0;
             displayTool.innerText = 0
         }
         else if((valorActualSlp + parseInt(element.value)) <= 9999){
             valorAuxiliarSLP = valorActualSlp
-            console.log(valorAuxiliarSLP);
             valorActualSlp += parseInt(element.value)
             displayTool.innerText = valorActualSlp
         }else{
@@ -52,7 +49,6 @@ buttonTool.addEventListener('click', function () {
     svgArrow.classList.toggle('flip')
     })
 buttonStepBack.addEventListener('click', function () {
-    console.log(valorActualSlp, valorAuxiliarSLP);
      valorActualSlp = valorAuxiliarSLP 
     displayTool.innerText = valorActualSlp
 })

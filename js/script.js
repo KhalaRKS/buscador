@@ -11,7 +11,11 @@ filterText.value = ''
 filterText.innerText = ''
 const breedInput = document.getElementById('breed-input')
 const partInput = document.getElementById('part-input')
-const distanceInput = document.getElementById('distance-input')
+const distanceInput = document.getElementById('distance-input') 
+
+const BACKGROUND_STATS = "./images/bg-stats.png"
+const ICON_ATTACK = "./images/icon-atk.png"
+const ICON_DEFENSE = "./images/icon-def.png"
 
 var cardsAux = cards;
 var auxiliarCardsCoincidence;
@@ -28,17 +32,35 @@ function cleanCards (){
 }
 function printCards(carta, index){
 
-    var {name, hability, url, distance, path, description} = carta;
+    let {name, hability, url, distance, path, description, attack, defense, energy} = carta;
     distance = distance ? 'Ranged' : 'Melee'
-    if(name == 'STRAWBERRY SHORTCAKE')
-    distance = '2'
+    let LEFT_PIXEL_ATTACK_DISTANCE = "-7px"
+    let LEFT_PIXEL_DEFENSE_DISTANCE = "-8px"
+    if(attack/2 >= 50){
+    LEFT_PIXEL_ATTACK_DISTANCE = "-13px"
+    }
+    if(defense/2 >=50) {
+    LEFT_PIXEL_DEFENSE_DISTANCE = "-13px"
+    }
+    if (name == 'STRAWBERRY SHORTCAKE'){
+        energy = 2;
+    }else if(energy == undefined){
+        energy = 1
+    }else{
+        energy = 0
+    }
+
     var etiqueta = "<div class='card' id='"+index+"'><div class='title-card'> <p>"+path+" "+ name+"</p><p>"+distance+"</p>"
-    var etiquetaAuxiliar = "</div><div><p class='energy'>1</p><p class='hability'>"+hability+"</p><p class='description'>"+description+"</p><img class='card-image' src='"+url+"' alt=''></div></div>"
+    var etiquetaAuxiliar = "</div><div><p class='energy'>"+energy+"</p><p class='hability'>"+hability+"</p><p class='description'>"+description+"</p><div class='icons-card'><img id='bg-atk' class='image-icon-card' src='"+BACKGROUND_STATS+"' alt=''><img id='bg-def' class='image-icon-card' src='"+BACKGROUND_STATS+"' alt=''><img id='icon-atk' class='image-icon-card' src='"+ICON_ATTACK+"' alt=''><p style='left:"+LEFT_PIXEL_ATTACK_DISTANCE+"' id='atk-value'>"+attack+"</p><img id='icon-def' class='image-icon-card' src='"+ICON_DEFENSE+"' alt=''><p style='left:"+LEFT_PIXEL_DEFENSE_DISTANCE+"' id='def-value'>"+defense+"</p></div><img class='card-image' src='"+url+"' alt=''></div></div>"
     var abc = etiqueta + etiquetaAuxiliar;
     var contenedorTexto= document.createElement("li");
     contenedorCards.appendChild(contenedorTexto);
     contenedorTexto.innerHTML = abc;
-
+    if(hability.length >= 15){
+    let textHability = document.querySelector('.hability')
+    textHability.style.left = '60px';
+    }
+}/*else{
 }
 /*Cargar cartas cuando la página se inicia */
 function loadCards(){
@@ -61,7 +83,7 @@ const searchCards = () => {
             }
         }else{
             cleanCards()
-            return console.log('cant print no coincidendes Error 200');
+            return 
         }
     }else{
         cleanCards()
@@ -71,7 +93,6 @@ const searchCards = () => {
 }
 /*Filtra las cartas correspondientes al tipo de filtro coincidente */
 function filterCards (filtros){
-    console.log(filtros.distance);
     cardsAux = cards;
     if(filtros.breed != 0){
         cardsAux = cardsAux.filter( carta => new RegExp(filtros.breed, 'i').test(carta.breed.toLowerCase()))
@@ -90,7 +111,7 @@ function filterCards (filtros){
 
 /*Recibe los filtros de las cartas que se desean buscar y las guarda en un objeto para ser cargadas por la funcion filterCards */
 function filters (breed,part,distance){
-    console.log(arguments[0],arguments[1],arguments[2]);
+    
 
     activeFilter.breed = arguments[0]
     activeFilter.part = arguments[1]
