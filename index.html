@@ -12,7 +12,7 @@
     <title>Document</title>
     
 </head>
-<body class="bg-dark">
+<body class="body">
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
@@ -39,15 +39,15 @@
             </div>
           </nav>
     </header>
-    <main class="">
+    <main>
       <div class="donation-container">
         <h2 class="h5">If you want to support the web </h2>
         <p class="h6"><span class="cripto-title">BNB (BEP20):</span> 0x9e377806d35df9676d6f3067139034be1f715c2f</p>
         <p class="h6"><span class="cripto-title">SLP (RONIN):</span> ronin:f650dd93405576f2adcceec9dc4a73c1ebe74faf</p>
       </div>
-      <h1 class="text-center text-light bg-dark">Welcome to Axie Page</h1>
-      <div class="bg-dark navbar-tool">
-        <div class="d-flex justify-content-around contenedor-texto-navbar">
+      <h1 class="">Welcome to Axie Page</h1>
+      <div class="navbar-tool">
+        <div class="d-flex justify-content-around contenedor-texto-navbar bg-dark">
           <p class="h3 text-light">Herramienta para calcular energia</p>
           <button id="boton-tool" class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTool" aria-expanded="false" aria-controls="collapseExample">
             <span id="span-boton">
@@ -144,14 +144,14 @@
           </div>
       </div>
         <div id="contenedor-general">
-          <h3 class="text-center text-light">Explorador de cartas</h3>
+          <h3 class="text-center text-light title-card-explorer">Explorador de cartas</h3>
             <div class="" id="contenedor-input">
                 <div>
-                    <p class="h6 text-light">Type here to search</p>
+                    <p class="h6 text-light title-card-explorer">Type here to search</p>
                         <input type="text" class="form-control input-card" placeholder="Search here" id="filter-text" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
                 <div>
-                    <p class="h6 text-light">Breed</p>
+                    <p class="h6 text-light title-card-explorer">Breed</p>
                     <select class="form-select" id="breed-input">
                         <option value=0 selected>Choose...</option>
                         <option value="aquatic">Aquatic</option>
@@ -163,7 +163,7 @@
                     </select>
                 </div>
                 <div>
-                    <p class="h6 text-light">Part</p>
+                    <p class="h6 text-light title-card-explorer">Part</p>
                     <select class="form-select"  id="part-input">
                         <option value=0 selected>Choose...</option>
                         <option value="tail">Tail</option>
@@ -173,7 +173,7 @@
                     </select>
                 </div>
                 <div>
-                    <p class="h6 text-light">Distance</p>
+                    <p class="h6 text-light title-card-explorer">Distance</p>
                     <select class="form-select"  id="distance-input">
                         <option value=0 selected>Choose...</option>
                         <option value="true" >Ranged</option>
@@ -185,6 +185,26 @@
             <div id="contenedor-cards"></div>
         </div>
     </main>
+    <footer class="contenedor-footer">
+      <div>
+        <h5>Some utility links</h5>
+        <ul>
+          <li>Privacy policity</li>
+          <li>Contact me</li>
+          <li>Support me</li>
+          <li>About me</li>
+        </ul>
+      </div>
+      <div>
+        <h5>For more info about the page</h5>
+        <ul>
+          <li>Features</li>
+          <li>FAQ</li>
+          <li>Community</li>
+          <li>For businesses</li>
+        </ul>
+      </div>
+    </footer>
     <script type="module" src="js/script.js"></script>
     <script type="module" src="js/tool.js"></script>
     <script src="js/energyTool.js"></script>

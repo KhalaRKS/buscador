@@ -38,9 +38,13 @@ function printCards(carta, index){
     let LEFT_PIXEL_DEFENSE_DISTANCE = "-8px"
     if(attack/2 >= 50){
     LEFT_PIXEL_ATTACK_DISTANCE = "-13px"
+    }else if (attack == 0){
+        LEFT_PIXEL_ATTACK_DISTANCE = "-5px"
     }
     if(defense/2 >=50) {
     LEFT_PIXEL_DEFENSE_DISTANCE = "-13px"
+    }else if (defense == 0){
+        LEFT_PIXEL_DEFENSE_DISTANCE = "-5px"
     }
     if (name == 'STRAWBERRY SHORTCAKE'){
         energy = 2;
