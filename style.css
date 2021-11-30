@@ -115,12 +115,19 @@ button:focus, button:active, button:hover, button:visited{
   color: white;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
-.hability{
+.contenedor-hability{
   position: absolute;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 260px;
+  left: 0;
+}
+.hability{
   font-weight: 700;
   color: white;
-  padding-top: 20px;
-  left: 70px;
+  padding: 20px;
 }
 .donation-container{
   font-size: 1em;
@@ -421,6 +428,10 @@ h1{
         grid-column:4/6;
         grid-row: 2/4;
       }
+      .twelve{
+        grid-column:4/6;
+        grid-row: 2/4;
+      }
       .energy-one{
         grid-column: 2/5;
         grid-row: 4;
@@ -433,6 +444,14 @@ h1{
         flex-direction: column;
         grid-column: 1/6;
         grid-row: 5;
+      }
+      .contenedor-texto-navbar{
+        flex-direction: column;
+        justify-content: center;
+        height: 100px;
+      }
+      .navbar-tool{
+        height: 100px;
       }
       .container-button-tool{
         padding-top: 5px;
@@ -495,9 +514,10 @@ h1{
     .contenedor-texto-navbar{
       flex-direction: row;
       justify-content: center;
+      height: 80px;
     }
     .navbar-tool{
-      height: 100px;
+      height: 80px;
     }
     .wrapper {
       margin: auto;
@@ -612,14 +632,14 @@ h1{
   }
   .energy-one{
     grid-column: 9/11;
-    grid-row: 2;
+    grid-row: 1;
     text-align: center;
     margin-top: 5px;
   }
   .energy-two{
     grid-column: 8/12;
     gap: 1px;
-    grid-row: 3;
+    grid-row: 2;
   }
   }
   @media  screen and (min-width:1150px) {
