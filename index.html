@@ -14,9 +14,45 @@
 </head>
 <body class="body">
     <header>
-        <nav class="navbar navbar-dark bg-dark">
+      <nav>
+        <div class="contenedor-nav">
+          <ul class="contenedor-nav-menu">
+            <li>Guides</li>
+            <li>Tools</li>
+            <li>Tips</li>
+          </ul>
+          <ul class="contenedor-nav-precios">
+            <li>
+              <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6783.png"  class="price-image" alt="axs-image">
+              <div id="arrow-axs"></div>
+              <p id="axs-price">$</p>
+            </li>
+            <li>
+              <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/5824.png" class="price-image" alt="slp-image">
+              <div id="arrow-slp"></div>
+              <p id="slp-price">$</p>
+            </li>
+          </ul>
+          <ul class="contenedor-nav-idiomas">
+            <i class="fas fa-language"></i>
+            <li class="idiomas"><a href="espanol.html"><img src="node_modules/flag-icons/flags/es.svg" class="flag" alt="" srcset=""></a></li>
+            <li class="idiomas"><a href=""><img src="node_modules/flag-icons/flags/us.svg" class="flag" alt="" srcset=""></a></li>
+          </ul>
+        </div>
+      </nav>
+        <!-- <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Menu</a>
+              <div class="contenedor-precios">
+                <div class="contenedor-slp">
+                  <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/5824.png" class="slp-image" alt="slp-image">
+                  <p class="navbar-brand">HOLA</p>
+                </div>
+                <div class="contenedor-axs">
+                  <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/6783.png"  class="slp-image" alt="axs-image">
+                  <p class="navbar-brand">HOLA</p>
+                </div>
+              </div>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -38,6 +74,7 @@
               </div>
             </div>
           </nav>
+        -->
     </header>
     <main>
       <div class="donation-container">
@@ -105,8 +142,8 @@
                     <p class="h5">Other value</p>
                     <input type="number" id="input-slp">
                     <div class="eleven-buttons">
-                      <button class="btn-primary" id="btn-add">Add</button>
-                      <button class="btn-primary" id="btn-back">
+                      <button class="" id="btn-add">Add</button>
+                      <button class="" id="btn-back">
                           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
                           <path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z"/>
                           <path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z"/>
@@ -120,8 +157,8 @@
                   </div>
                   <div class="energy-two">
                     <div>
-                      <button id="buttonPlusEnergy" class="btn-success btn-energy" value=2>energy+</button>
-                      <button id="buttonMinusEnergy" class="btn-danger btn-energy" value=3 >energy-</button>
+                      <button id="buttonPlusEnergy" class="btn-success btn-energy" value=2><i class="fas fa-plus"></i></button>
+                      <button id="buttonMinusEnergy" class="btn-danger btn-energy" value=3 ><i class="fas fa-minus"></i></button>
                     </div>
                     <div class="container-button-tool">
                       <button id="buttonNextRoundEnergy" class="btn-warning btn-energy" value=1>Next round</button>
@@ -130,10 +167,10 @@
                   </div>
                     <div class="energy-three">
                       <div class="first-axie">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                        <div class="button-select-axie-card-type"></div>
+                        <div class="button-select-axie-card-type"></div>
+                        <div class="button-select-axie-card-type"></div>
+                        <div class="button-select-axie-card-type"></div>
                       </div>
                     </div>
                   </div>
@@ -181,7 +218,9 @@
                 </div>
 
             </div>
-            <div id="contenedor-cards"></div>
+            <div id="contenedor-cards">
+              
+            </div>
         </div>
     </main>
     <footer class="contenedor-footer">
@@ -207,6 +246,8 @@
     <script type="module" src="js/script.js"></script>
     <script type="module" src="js/tool.js"></script>
     <script src="js/energyTool.js"></script>
+    <script src="js/api.js"></script>
+    <script src="https://kit.fontawesome.com/3dee7bc093.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

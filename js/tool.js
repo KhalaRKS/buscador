@@ -6,6 +6,9 @@ const addButton = document.getElementById('btn-add')
 const svgArrow = document.getElementById('rotation')
 const buttonTool = document.getElementById('boton-tool')
 const buttonStepBack = document.getElementById('btn-back')
+const selectAxieCardType = document.getElementsByClassName('button-select-axie-card-type')
+var arrayselectAxieCardType = [];
+
 var valorAuxiliarSLP = 0;
 var valorActualSlp = 0
 for (let index = 0; index < buttons.length; index++) {
@@ -27,6 +30,12 @@ for (let index = 0; index < buttons.length; index++) {
             displayTool.innerText =valorActualSlp
         }
     })
+    
+}
+for (let index = 0; index < selectAxieCardType.length; index++) {
+    const element = selectAxieCardType[index];
+    arrayselectAxieCardType.push(element)
+    console.log(arrayselectAxieCardType);
     
 }
 addButton.addEventListener('click', function (){
@@ -52,3 +61,4 @@ buttonStepBack.addEventListener('click', function () {
      valorActualSlp = valorAuxiliarSLP 
     displayTool.innerText = valorActualSlp
 })
+
