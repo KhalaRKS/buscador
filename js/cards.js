@@ -1350,7 +1350,7 @@ const cards = [
     },
     /*--------------------------------------------- CARTAS REPTIL -------------------------------*/
     {
-        name: 'BONE SAIL, RUGGED SAIL',
+        name: 'BONE SAIL',
         hability: 'Ivory Chop',
         breed: 'reptile',
         distance: false,
